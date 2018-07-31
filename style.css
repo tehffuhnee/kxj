@@ -1,166 +1,105 @@
-<!DOCTYPE html>
+/* gray: #757C87
+pink: #E4B4C2
+blue: #ACD6D5 */
 
-<html>
-  <head>
-    <title>❀&nbsp;&nbsp;k x j - quiz&nbsp;&nbsp;❀</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://freepngimg.com/download/winter_snow/6-2-clear-snow-png.png">
-    <script src="script.js"> </script>
-  </head>
-  <body>
-    <div id="header">
-      <span style="color: #E4B4C2"> k </span> <span style="color: #757C87"> x </span> <span style="color: #ACD6D5"> j </span>
-      &nbsp;&nbsp;&nbsp;
-      <button class="btnheader" onclick="goHome()">HOME</button>
-      <button class="btnheader" onclick="goGet()">GETTING STARTED</button>
-      <button class="btnheader" onclick="goQuiz()">QUIZ</button>
-      <button class="btnheader" onclick="goWell()">WELLNESS</button>
-      <button class="btnheader" onclick="goCreators()">CREATORS</button>
-    </div>
+html, body {margin:0; padding:0}
 
-    <div class="title" style="background-color: #E4B4C2"> TAKE THE KXJ SKINCARE QUIZ <br> TO FIND PRODUCTS SUITED TO YOUR SKIN NEEDS </div>
+@font-face {
+    font-family: nature;
+    src: url(nature.ttf);
+}
 
-    <div id="main">
+@font-face {
+    font-family: brandon;
+    src: url(brandon.otf);
+}
 
-      <form  id="form1">
+.title {text-align: center; font-family: nature; font-size: 60px; color: white; padding-top: 50px; padding-bottom: 40px; line-height: 80px}
 
-        <br> <br> <br>
+/* home */
+#header {font-family:nature; font-size: 50px;
+          padding-top: 30px; padding-bottom: 30px; padding-left: 70px;}
+.btnheader {font-family: brandon; font-size: 20px; color: #757C87;
+        padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px;}
+.btnheader:hover {background-color: #d3d3d3}
+#intro {background-color: #ACD6D5; color: white; font-size: 60px; font-family: nature; line-height: 80px}
+#mission {color: #E4B4C2; font-size: 30px; font-family: brandon; line-height: 70px;
+          margin-left: 15%; margin-right: 15%; text-align: center;}
+.mySlides {display:none; margin-left: auto; margin-right: auto; width: auto; height: 400px;}
 
-        <p class="question">What is your skin type?</p></td><td>
-          <div class="answers">
-            <label><input type="radio" name="stype" id="oily" value="1" /> Oily</label>
-            <label><input type="radio" name="stype" id="dry" value="2" /> Dry</label>
-            <label><input type="radio" name="stype" id="normal" value="3" /> Normal</label>
-            <label><input type="radio" name="stype" id="combo" value="4" /> Combination</label>
-          </div>
+/* getting started */
+.product {font-size: 30px; line-height: 30px; padding-top: 10px}
 
-        <br> <br> <br>
+.explore {color: white}
 
-        <p class="question">What is your main skin concern?</p>
-          <div class="answers">
-            <label><input type="radio" name="sconcern" id="Anti_Aging" value="11" /> Aging</label>
-            <label><input type="radio" name="sconcern" id="Hyperpigmentation" value="23" /> Hyperpigmentation</label>
-            <label><input type="radio" name="sconcern"id="Acne" value="31" /> Acne</label>
-            <label><input type="radio" name="sconcern"id="Pores" value="45" /> Pores</label>
-          </div>
+.description {font-size: 20px; line-height: 30px}
 
-        <br> <br> <br>
+.column {float: left; padding: 10px;}
 
-          <button id="getResults" type="submit" value="Submit">Get My Results</button>
+.left {width: 15%}
 
-        <br> <br> <br>
+.right {width: 60%}
 
-        </td></tr>
-      </form>
+.row:after {content: ""; display: table; clear: both;}
 
-      <p id="answer2"></p>
+#chunk1 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#one {padding-left: 13%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
-      <br> <br> <br>
+#chunk2 {background-color: #757C87; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#two {padding-left: 12%; padding-right: 2%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
-    </div>
+#chunk3 {background-color: #ACD6D5; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#three {padding-left: 12%; padding-right: 2%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
-    <script>
+#chunk4 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#four {padding-left: 11.5%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
+#chunk5 {background-color: #757C87; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#five {padding-left: 11.5%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
-      document.getElementById("form1").onsubmit=function() {
+#chunk6 {background-color: #ACD6D5; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#six {padding-left: 11.5%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
-        stype= parseInt(document.querySelector('input[name = "stype"]:checked').value);
+#chunk7 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#seven {padding-left: 12%; padding-right: 2%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
+#chunk8 {background-color: #757C87; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#eight {padding-left: 11%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
-        sconcern = parseInt(document.querySelector('input[name = "sconcern"]:checked').value);
+#chunk9 {background-color: #ACD6D5; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#nine {padding-left: 12%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
-        total= stype + sconcern;
+#chunk10 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#ten {padding-left: 9.5%; padding-right: 5.5%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
+/* quiz */
+label {width: 200px; display: inline-block}
+#main {text-align: center; font-family: brandon; color: #757C87}
+.question {font-size: 30px; color: #E4B4C2; font-weight: bold}
+.answers {font-size: 20px}
+#getResults {display: block; margin-left: auto; margin-right: auto; margin-top: 20px; font-family: brandon; font-size: 20px; color: #757C87;
+  padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px}
+#getResults:hover {background-color: #d3d3d3}
+#answer2 {font-size: 25px;}
 
+/* wellness */
+.column1 {float: left; padding: 20px; width: 15%}
+.column2 {float: left; padding: 20px; width: 45%}
+.column3 {float: left; padding: 20px; width: 25%}
 
-    if(total==12) {
-    		document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/neogendermalogy-real-ferment-micro-serum'> Neogen's Real Ferment Micro Serum! </a>";
+.tip {font-family: brandon; font-size: 50px; color: white;}
+.explain {font-family: brandon; font-size: 23px; color: white; line-height: 35px;
+          padding-top: 50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px}
+.link {font-family: brandon; font-size: 22px; color: white;}
+#stress {background-color: #E4B4C2; margin-left: 10%;}
+#water {background-color: #ACD6D5; margin-right: 10%;}
+#diet {background-color: #757C87; margin-left: 10%;}
 
-    	}
-
-    if(total==24) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/cosrx-triple-c-lightning-liquid'>COSRX's Triple C Lighthing Liquid! </a>";
-
-    	}
-
-    if(total==32) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/klairs-supple-preparation-facial-toner-180ml'>Klairs's Supple Preparation Facial Toner! </a>";
-
-    	}
-
-    if(total==46) {
-    	  document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/neogen-bio-peel-gauze-peeling-wine'>Neogen's Bio Peel Gauze Wine !</a>";
-
-    	}
-
-    if(total==13) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/klavuu-blue-pearlsation-marine-aqua-enriched-creamhttps://sokoglam.com/products/klavuu-blue-pearlsation-marine-aqua-enriched-cream'>Klavuu's Blue Pearlsation Marine Aqua Enriched Cream! </a>";
-
-    	}
-
-    if(total==25) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/missha-time-revolution-first-treatment-essence-intensive-moist'>Missha's Time Revolution First Treatment Essence Intensive Moist! </a>";
-
-    	}
-
-    if(total==33) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/benton-snail-bee-high-content-skin'>Benton's Snail Bee High Content Skin Toner! </a>";
-
-    	}
-
-    if(total==47) {
-    	  document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/banila-co-clean-it-zero-resveratrol'>Banila Co.'s Clean It Zero Revitalizing Cleansing Balm! </a>";
-
-    	}
-
-    if(total==14) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/easydew-ex-repair-control-repair-control-egf'>Easydew EX's Repair Control EGF! </a>";
-
-    	}
-
-    if(total==26) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/neogen-bio-peel-gauze-peeling-green-tea'>Neogen's Green Tea Bio Peel Gauze! </a>";
-
-    	}
-
-    if(total==34) {
-        document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/neogen-real-fresh-cleansing-stick-green-tea'>Neogen's Real Fresh Green Tea Cleansing Stick! </a>";
-
-    	}
-
-    if(total==47) {
-    	 document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/klavuu-pure-pearlsation-revitalizing-facial-cleansing-foam'>Klavuu's Pure Pealsation Revitalizing Facial Cleansing Foam! </a>";
-
-     }
-
-     if(total==15) {
-         document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/hanskin-bio-origin-the-eye-cream'>Hanskin's Bio Origin the Eye Cream! </a>";
-
-    	 }
-
-     if(total==27) {
-         document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/neogen-white-truffle-serum-in-oil-drop'>Neogen's White Truffle Serum In Oil Drop! </a>";
-
-    	 }
-
-     if(total==35) {
-         document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/skinfood-hydro-fitting-snail-mask-sheet-set'>Skinfood's Hydro-Fitting Snail Mask Sheets! </a>";
-
-    	 }
-
-     if(total==49) {
-     	 document.getElementById("answer2").innerHTML = "We recommend <a href ='https://sokoglam.com/products/klairs-gentle-black-deep-cleansing-oil'>Klairs's Gentle Black Deep Cleansing Oil! </a>";
-
-    	}
-
-
-    return false; // required to not refresh the page; just leave this here
-    	 }
-
-
-  </script>
-
-
-
-  </body>
-</html>
+/* creators */
+.aboutus {text-align: center; font-family: brandon; color: white}
+.jbtnroutine {text-align: center; font-family: brandon; font-size: 30px; color: #ACD6D5;
+              border-radius: 10px; height: 200px; width: 200px; vertical-align: middle; margin-left: 5px; margin-right: 5px}
+.xbtnroutine {text-align: center; font-family: brandon; font-size: 30px; color: #757C87;
+              border-radius: 10px; height: 200px; width: 200px; vertical-align: middle; margin-left: 5px; margin-right: 5px}
+.kbtnroutine {text-align: center; font-family: brandon; font-size: 30px; color: #E4B4C2;
+              border-radius: 10px; height: 200px; width: 200px; vertical-align: middle; margin-left: 5px; margin-right: 5px}
