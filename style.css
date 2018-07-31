@@ -72,6 +72,10 @@ html, body {margin:0; padding:0}
 #chunk10 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
 #ten {padding-left: 9.5%; padding-right: 5.5%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
 
+/* quiz */
+label {width: 150px; display: inline-block}
+#butt {display: block; margin-top: 20px}
+
 /* wellness */
 .column1 {float: left; padding: 20px; width: 15%}
 .column2 {float: left; padding: 20px; width: 45%}
