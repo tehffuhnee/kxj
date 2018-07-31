@@ -1,0 +1,95 @@
+/* gray: #757C87
+pink: #E4B4C2
+blue: #ACD6D5 */
+
+html, body {margin:0; padding:0}
+
+@font-face {
+    font-family: nature;
+    src: url(nature.ttf);
+}
+
+@font-face {
+    font-family: brandon;
+    src: url(brandon.otf);
+}
+
+.title {text-align: center; font-family: nature; font-size: 60px; color: white; padding-top: 50px; padding-bottom: 40px; line-height: 80px}
+
+/* home */
+#header {font-family:nature; font-size: 50px;
+          padding-top: 30px; padding-bottom: 30px; padding-left: 70px;}
+.btnheader {font-family: brandon; font-size: 20px; color: #757C87;
+        padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px;}
+.btnheader:hover {background-color: #d3d3d3}
+#intro {background-color: #ACD6D5; color: white; font-size: 60px; font-family: nature; line-height: 80px}
+#mission {color: #E4B4C2; font-size: 30px; font-family: brandon; line-height: 70px;
+          margin-left: 15%; margin-right: 15%; text-align: center;}
+.mySlides {display:none; margin-left: auto; margin-right: auto; width: auto; height: 400px;}
+
+/* getting started */
+.product {font-size: 30px; line-height: 30px; padding-top: 10px}
+
+.explore {color: white}
+
+.description {font-size: 20px; line-height: 30px}
+
+.column {float: left; padding: 10px;}
+
+.left {width: 15%}
+
+.right {width: 60%}
+
+.row:after {content: ""; display: table; clear: both;}
+
+#chunk1 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#one {padding-left: 13%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk2 {background-color: #757C87; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#two {padding-left: 12%; padding-right: 2%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk3 {background-color: #ACD6D5; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#three {padding-left: 12%; padding-right: 2%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk4 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#four {padding-left: 11.5%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk5 {background-color: #757C87; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#five {padding-left: 11.5%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk6 {background-color: #ACD6D5; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#six {padding-left: 11.5%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk7 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#seven {padding-left: 12%; padding-right: 2%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk8 {background-color: #757C87; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#eight {padding-left: 11%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk9 {background-color: #ACD6D5; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#nine {padding-left: 12%; padding-right: 3%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+#chunk10 {background-color: #E4B4C2; font-family: brandon; margin-left: 10%; margin-right: 10%; color: white;}
+#ten {padding-left: 9.5%; padding-right: 5.5%; padding-top: 5%; font-size: 150px; line-height: 155px; padding-bottom: 50px;}
+
+/* wellness */
+.column1 {float: left; padding: 20px; width: 15%}
+.column2 {float: left; padding: 20px; width: 45%}
+.column3 {float: left; padding: 20px; width: 25%}
+
+.tip {font-family: brandon; font-size: 50px; color: white;}
+.explain {font-family: brandon; font-size: 23px; color: white; line-height: 35px;
+          padding-top: 50px; padding-bottom: 50px; padding-left: 75px; padding-right: 75px}
+.link {font-family: brandon; font-size: 22px; color: white;}
+#stress {background-color: #E4B4C2; margin-left: 10%;}
+#water {background-color: #ACD6D5; margin-right: 10%;}
+#diet {background-color: #757C87; margin-left: 10%;}
+
+/* creators */
+.aboutus {text-align: center; font-family: brandon; color: white}
+.jbtnroutine {text-align: center; font-family: brandon; font-size: 30px; color: #ACD6D5;
+              border-radius: 10px; height: 200px; width: 200px; vertical-align: middle; margin-left: 5px; margin-right: 5px}
+.xbtnroutine {text-align: center; font-family: brandon; font-size: 30px; color: #757C87;
+              border-radius: 10px; height: 200px; width: 200px; vertical-align: middle; margin-left: 5px; margin-right: 5px}
+.kbtnroutine {text-align: center; font-family: brandon; font-size: 30px; color: #E4B4C2;
+              border-radius: 10px; height: 200px; width: 200px; vertical-align: middle; margin-left: 5px; margin-right: 5px}

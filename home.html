@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>❀&nbsp;&nbsp;k x j - korean skin care&nbsp;&nbsp;❀</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="https://freepngimg.com/download/winter_snow/6-2-clear-snow-png.png">
+    <script src="script.js"> </script>
+  </head>
+  <body>
+    <div id="header">
+      <span style="color: #E4B4C2"> k </span> <span style="color: #757C87"> x </span> <span style="color: #ACD6D5"> j </span>
+      &nbsp;&nbsp;&nbsp;
+      <button class="btnheader" onclick="goHome()">HOME</button>
+      <button class="btnheader" onclick="goGet()">GETTING STARTED</button>
+      <button class="btnheader" onclick="goQuiz()">QUIZ</button>
+      <button class="btnheader" onclick="goWell()">WELLNESS</button>
+      <button class="btnheader" onclick="goCreators()">CREATORS</button>
+    </div>
+
+    <div id="intro">
+      <br>
+      <div style="margin-left:15%">FOR YOUR SKIN</div>
+      <div style="margin-left:35%">THROUGH THICK AND THIN</div>
+      <br>
+    </div>
+    <div id="mission">
+      <br>
+      <div> KXJ IS DEDICATED TO INSPIRING GOOD SKIN HABITS. </div>
+      <div> WE BELIEVE SKINCARE IS A PERSONAL JOURNEY, ONE THAT SHOULD EVOLVE AS YOU DO. </div>
+      <div> WE ARE COMMITTED TO CURATING THE BEST OF KOREAN SKINCARE SO YOU CAN THRIVE IN THE SKIN YOU'RE IN. </div>
+      <div> ♡ </div>
+    </div>
+
+    <div  class="w3-content w3-section">
+      <br>
+      <img class="mySlides" src="http://static1.squarespace.com/static/51d151b1e4b05d425c859fc9/537ab189e4b0a7f6402e3589/58ffdf72440243b85ba3198a/1493185156326/beauty+water.jpg?format=1000w">
+      <img class="mySlides" src="https://78.media.tumblr.com/a67c9a39979b63269a459e038082af79/tumblr_inline_p3ixnp4PJk1qeq0mh_500.png">
+      <img class="mySlides" src="http://www.nguonmyphamhanquoc.vn/Uploads/Uploads/images/trang%20diem/bb%20cc%20cushion/cushion/Laneige%20Lucky%20Chouette%20BB%20Cushion%20Pore%20Control%203.jpg">
+      <img class="mySlides" src="https://i.pinimg.com/originals/f9/b6/f5/f9b6f51e9ab4417ea2c1a1315550b9d4.png">
+    </div>
+    <script>
+      var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 5000);
+        }
+      </script>
+    <br> <br>
+  </body>
+</html>
